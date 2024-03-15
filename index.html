@@ -1,0 +1,27 @@
+<!DOCTYPE htlm>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css">
+    <h1 id="title"> Survery Form </h2>
+    <p id="description"> this is a short description of this survery</p>
+    <form id="survey-form"> 
+      <label for="name" id="name-label">Name<input required id="name" type="text" placeholder="name" value="account_name"/>
+      <label for="email" id="email-label"> Email<input required id="email" type="email" placeholder="email" value="account_email"/>
+      <label for="number" id="number-label">Phone Number<input id="number" type="number" min="6" max="8" placeholder="number" value="account_phone"/>
+      <select id="dropdown">
+        <option>(Select One)</option>
+        <option>Yes</option>
+        <option>No</option>
+        </select>
+        <p>Select Location</p>
+      <input type="radio" name="location" value="member_location">Local</input> 
+      <input type="radio" name="location" value="member_location">international</input>
+      <p>Select Duration</p>
+      <input type="radio" name="subscription_length" value="subscription_length">monthly</input> 
+      <input type="radio" name="subscription_length" value="subscription_length">yearly</input>
+      <p>Select All That Apply </p>
+      <input type="checkbox" value="Student"> Student </input>
+      <input type="checkbox" value="Professional"> Professional</input>
+      <input type="checkbox" value="Parent"> Parent</input>
+      <textarea placeholder="additional details"></textarea>
+      <input type="submit" id="submit">
+    </form>
